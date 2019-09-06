@@ -1,0 +1,39 @@
+{
+    "name": "muhammetsait/novartl",
+    "description": "Rtl theme for Laravel Nova.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "rtl",
+        "theme"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhammet Sait",
+            "email": "muhammetsait@protonmail.com",
+            "homepage": "https://muhammetsait.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Muhammetsait\\NovaRtl\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Muhammetsait\\NovaRtl\\ThemeServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
