@@ -4,6 +4,10 @@
 
 ## Installation
 
+```
+composer require muhammetsait/novartl
+```
+
 ## Usage
 
  The rtl-theme is loaded automatically when the app locale is set to one of the following:
