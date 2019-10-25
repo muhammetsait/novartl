@@ -28,6 +28,10 @@ body, li, th, td, table, div, h1, h2, h3, h4, h5, h6, a, span, input, label {
     padding-right: 2.75rem;
 }
 
+[x-placement=bottom-end] {
+    left:54px !important;
+}
+
 .dropdown-menu-right {
     right: unset !important;
     left: 0 !important;
