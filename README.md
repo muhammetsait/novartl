@@ -8,6 +8,12 @@
 composer require muhammetsait/novartl
 ```
 
+Then, you need to publish the `theme.css` asset by using:
+
+```
+php artisan vendor:publish --provider='Muhammetsait\NovaRtl\ThemeServiceProvider'
+```
+
 ## Usage
 
  The rtl-theme is loaded automatically when the app locale is set to one of the following:

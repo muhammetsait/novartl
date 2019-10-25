@@ -3,9 +3,8 @@
 namespace Muhammetsait\NovaRtl;
 
 use Illuminate\Support\Facades\App;
-use Laravel\Nova\Nova;
-use Laravel\Nova\Events\ServingNova;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Nova\Nova;
 
 class ThemeServiceProvider extends ServiceProvider
 {
@@ -22,10 +21,12 @@ class ThemeServiceProvider extends ServiceProvider
             ])
             || 'rtl' == config('app.direction')
         ) {
-            Nova::serving(function (ServingNova $event) {
-                Nova::style('nova-rtl', __DIR__ . '/../resources/css/theme.css');
-            });
+            Nova::theme(asset('/vendor/muhammetsait/novartl/theme.css'));
         }
+
+        $this->publishes([
+            __DIR__ . '/../resources/css' => public_path('vendor/muhammetsait/novartl'),
+        ], 'public');
     }
 
     /**
